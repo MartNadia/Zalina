@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #d9d9d9;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+.header-content{
+    height: 100vh;
+    display: flex;
+}
+.header-left{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.header-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.title{
+    border:2px solid #747474;
+    background-color: #efefef;
+    padding-bottom: 10px;
+}
+h1{
+    font-size: 40px;
+    color: #000000;
+    text-shadow: 10px 10px 10px #4e4e4e;
+    text-align: center;
+    padding: 10px;
+}
+.header_text{
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+}
+.header_photo{
+    background-image: url("imges/rab_stol.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60%;
+    width: 60%;
+    margin-left: 130px;
+    border-radius: 70px 0px 70px 0px;
+}
+.intro_content{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+h2{
+    color: #000000;
+    font-size: 30px;
+}
+hr{
+    width: 65%;
+    margin-bottom: 20px ;
+    border: none;
+    height: 2px;
+    background-color:#747474;
+}
+.intro_img{
+    width: 380px; 
+    height: 450px;
+    border-radius: 0px 70px 0px 70px;
+}
+.intro-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.intro_text{
+    color: #010101;
+    font-size: 18px;
+    padding-top: 20px;
+}
+.courses_articl{
+    margin: 0px 90px;
+}
+.hr_2{
+    width: 30%;
+}
+.cart{
+    margin: 40px 130px;
+    display: inline-block;
+}
+.cart_img_1{
+    width: 330px;
+    height:390px ;
+    border-radius:70px 0px 70px 0px ;
+    border: 2px solid #747474;
+    padding: 20px;
+}
+.cart_img_2{
+    width: 330px;
+    height:390px ;
+    border-radius:0px 70px 0px 70px ;
+    border: 2px solid #747474;
+    padding: 20px;
+}
+h3{
+    color: #747474;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.cart_text{
+    color: #000000;
+    margin-bottom: 20px;
+}
+.cart_btn{
+    color: #000000;
+    background-color: #747474;
+    padding: 10px 35px;
+}
+.pupils{
+    margin: 0px 70px;
+}
+.pupils_articl{
+    margin-top: 120px;
+}
+.hr_3{
+    width: 40%;
+}
+.pupils_photos{
+    width: 250px;
+    height:300px;
+}
+footer{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.footer_a{
+    color: #000000;
+}
+.fa-brands , .fa-whatsapp, .fa-facebook, .fa-instagram{
+    color: #747474;
+    font-size: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+@media(max-width:1000px){
+    .intro_img{
+        width: 0px;
+    }
+    .hr_2{
+        width:70%;
+    }
+}
+@media(max-width:850px){
+    .container{
+        padding: 0px 60px ;
+    }
+    .header-content{
+        display: inline;
+    }
+    .header-left{
+        width: 100%;
+        margin-top: 200px;
+    }
+    .intro_content{
+        padding-top: 240px;
+    }
+    .intro-left{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .cart{
+        margin: 40px 90px;
+    }
+}
+@media(max-width:550px){
+    .container{
+        padding: 0px 40px ;
+    }
+    .header-left{
+        flex-direction: row;
+        align-items: center;
+    }
+    h1{
+        font-size: 25px;
+        border: none;
+    }
+    .header_text{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    hr{
+        width: 100%;
+    }
+    .intro_text{
+        font-size: 14px;
+    }
+    .courses_articl{
+        margin: 0px;
+    }
+    .cart{
+        margin: 40px 0px;
+    }
+    .cart_img_1, .cart_img_2{
+        width: 280px;
+        height:340px ;
+    }
+    h3{
+        font-size: 17px;
+    }
+    .pupils{
+        margin: 0px 20px;
+    }
+    .hr_3{
+        width: 100%;
+    }
+}
+@media(max-width:350px){
+    
+    .cart_text{
+        font-size:14px ;
+    }
+    .cart_img_1, .cart_img_2{
+        width: 250px;
+        height:310px ;
+    }
+    .pupils{
+        margin: 0px;
+    }
+    .pupils_photos {
+        width: 230px;
+        height: 400px;
+    }
+}
